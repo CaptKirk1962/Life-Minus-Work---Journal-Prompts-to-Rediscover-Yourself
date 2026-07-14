@@ -1,0 +1,32 @@
+# Stable requirements for the Life Minus Work app
+
+# Streamlit application framework
+
+streamlit==1.36.0
+
+# Pin Streamlit's major data dependencies to versions compatible
+
+# with this older Streamlit release
+
+numpy==1.26.4
+pandas==2.2.2
+pyarrow==16.1.0
+
+# PDF generation
+
+fpdf==1.7.2
+
+# Image support, including WebP-to-PNG conversion
+
+Pillow==10.4.0
+
+# OpenAI Python SDK
+
+# Keep this below version 2 to prevent an unexpected major upgrade
+
+openai>=1.60.0,<2.0.0
+
+# Google Sheets and authentication
+
+gspread==6.1.4
+google-auth==2.33.0
